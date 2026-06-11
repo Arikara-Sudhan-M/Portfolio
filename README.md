@@ -1,77 +1,283 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 🚀 Arikara Sudhan – 3D Interactive Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A futuristic and interactive 3D portfolio website showcasing my skills, projects, certifications, education, and professional journey as a Computer Science Engineer, Frontend Developer, UI/UX Designer, and Prompt Engineer.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**Portfolio:** https://sudhanportfolio.vercel.app
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📖 About The Project
 
-## Expanding the ESLint configuration
+This portfolio is designed with a modern cyberpunk-inspired interface and immersive animations to provide visitors with an engaging experience while exploring my technical skills, certifications, academic background, and projects.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+The goal of this portfolio is to showcase my expertise in:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+* Frontend Development
+* UI/UX Design
+* Prompt Engineering
+* Database Management
+* Web Development
+* Problem Solving
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ✨ Features
+
+### 🏠 Hero Section
+
+* Modern futuristic design
+* Animated landing page
+* Responsive layout
+* Professional introduction
+
+### 👨‍💻 About Me
+
+* Personal profile
+* Career objectives
+* Academic journey
+* Professional interests
+
+### 🌌 Skills Galaxy
+
+Interactive visualization of technical skills:
+
+#### Frontend Development
+
+* HTML5
+* CSS3
+* JavaScript
+* React.js
+* Tailwind CSS
+
+#### Backend Development
+
+* PHP
+* SQL
+* Database Systems
+
+#### UI/UX Design
+
+* Figma
+* Wireframing
+* Prototyping
+* User Experience Design
+
+#### Data & Analytics
+
+* Power BI
+* Data Visualization
+
+#### Development Tools
+
+* Git
+* GitHub
+* VS Code
+
+---
+
+### 🎓 Education Timeline
+
+Interactive timeline displaying:
+
+* B.E. Computer Science Engineering
+* PSNA College of Engineering and Technology
+* Academic milestones
+* Educational achievements
+
+---
+
+### 🏆 Certifications
+
+Featured certifications include:
+
+* AWS Foundation of Prompt Engineering
+* JavaScript Mastery
+* Accenture UX Digital Skills
+
+---
+
+### 💼 Project Showcase
+
+#### E-Bonafide Certificate Automation System
+
+Features:
+
+* Automated certificate generation
+* Role-based authentication
+* Database integration
+* Secure workflow management
+
+#### Additional Projects
+
+* Portfolio Website
+* UI/UX Design Projects
+* Web Development Applications
+
+---
+
+### 🛣️ Career Roadmap
+
+Visual representation of:
+
+* Learning progress
+* Technical growth
+* Career goals
+* Future objectives
+
+---
+
+### 📞 Contact Section
+
+Visitors can connect through:
+
+* Email
+* LinkedIn
+* GitHub
+* Professional Networks
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* React.js
+* TypeScript
+* JavaScript
+* HTML5
+* CSS3
+* Tailwind CSS
+
+### UI/UX
+
+* Figma
+* Responsive Design
+* Modern Animations
+
+### Deployment
+
+* Vercel
+
+### Version Control
+
+* Git
+* GitHub
+
+---
+
+## 📂 Project Structure
+
+```bash
+portfolio/
+│
+├── public/
+│
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── sections/
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── package.json
+├── vite.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## ⚙️ Installation
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Clone Repository
+
+```bash
+git clone https://github.com/your-username/portfolio.git
 ```
-=======
-# Portfolio
->>>>>>> aa47a8e868e95e6910ede5feb9b8afed01142fc5
+
+### Navigate to Project
+
+```bash
+cd portfolio
+```
+
+### Install Dependencies
+
+```bash
+npm install
+```
+
+### Run Development Server
+
+```bash
+npm run dev
+```
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+---
+
+## 🎯 Objectives
+
+This portfolio was created to:
+
+* Showcase technical skills and projects
+* Demonstrate frontend development expertise
+* Highlight UI/UX capabilities
+* Present certifications and achievements
+* Build a strong professional online presence
+
+---
+
+## 🚀 Future Enhancements
+
+* AI-powered portfolio assistant
+* Blog section
+* Dark/Light theme toggle
+* Advanced 3D interactions
+* Project filtering system
+* Resume analytics dashboard
+* Multi-language support
+
+---
+
+## 👨‍💻 Author
+
+### Arikara Sudhan
+
+**Computer Science Engineer | Frontend Developer | UI/UX Designer | Prompt Engineer**
+
+### Connect With Me
+
+* Portfolio: https://sudhanportfolio.vercel.app
+* GitHub: https://github.com/your-github-username
+* LinkedIn: https://linkedin.com/in/your-linkedin-profile
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+© 2026 Arikara Sudhan. All Rights Reserved.

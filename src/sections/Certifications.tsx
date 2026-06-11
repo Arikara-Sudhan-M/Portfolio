@@ -1,12 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Compass, Key, ExternalLink, ShieldCheck } from 'lucide-react';
+import { Award, Compass, Key, ShieldCheck } from 'lucide-react';
 
 interface Certificate {
   title: string;
   authority: string;
   topics: string[];
-  id: string;
   glowColor: string;
   icon: React.ReactNode;
 }
@@ -17,7 +16,6 @@ export const Certifications: React.FC = () => {
       title: 'AWS Foundation of Prompt Engineering',
       authority: 'Amazon Web Services',
       topics: ['LLMs foundations', 'Prompt patterns', 'Tokens management', 'System instruction modeling'],
-      id: 'AWS-PE-2025',
       glowColor: '#00D4FF',
       icon: <Compass className="w-8 h-8 text-primary text-glow-primary" />,
     },
@@ -25,7 +23,6 @@ export const Certifications: React.FC = () => {
       title: 'Introduction to MySQL',
       authority: 'Oracle / Database Authority',
       topics: ['Relational queries', 'Index structures', 'Triggers & Procedures', 'Join execution plans'],
-      id: 'SQL-MY-4829',
       glowColor: '#8B5CF6',
       icon: <Key className="w-8 h-8 text-secondary" />,
     },
@@ -33,7 +30,6 @@ export const Certifications: React.FC = () => {
       title: 'JavaScript Mastery',
       authority: 'JS Foundation Academy',
       topics: ['Functional paradigms', 'Event loop & Concurrency', 'Modular structures', 'ESNext features'],
-      id: 'JS-MAS-1092',
       glowColor: '#EC4899',
       icon: <Award className="w-8 h-8 text-pink-500" />,
     },
@@ -41,7 +37,6 @@ export const Certifications: React.FC = () => {
       title: 'Accenture UX Digital Skills',
       authority: 'Accenture',
       topics: ['User experience testing', 'Wireframing grids', 'Heuristics checking', 'User personas mapping'],
-      id: 'ACC-UX-8821',
       glowColor: '#10B981',
       icon: <ShieldCheck className="w-8 h-8 text-emerald-400" />,
     },
@@ -85,7 +80,7 @@ export const Certifications: React.FC = () => {
                 
                 {/* FRONT side of card */}
                 <div 
-                  className="absolute inset-0 w-full h-full rounded-2xl glassmorphism border border-white/5 p-6 flex flex-col justify-between items-start backface-hidden"
+                  className="absolute inset-0 w-full h-full rounded-2xl glassmorphism border border-white/5 p-6 flex flex-col justify-start items-start backface-hidden"
                   style={{ 
                     backfaceVisibility: 'hidden',
                   }}
@@ -110,15 +105,11 @@ export const Certifications: React.FC = () => {
                       </p>
                     </div>
                   </div>
-
-                  <span className="font-mono text-[9px] tracking-wider text-gray-500 uppercase">
-                    ID: {cert.id}
-                  </span>
                 </div>
 
                 {/* BACK side of card (Flipped) */}
                 <div 
-                  className="absolute inset-0 w-full h-full rounded-2xl bg-[#090918] border border-white/10 p-6 flex flex-col justify-between items-stretch backface-hidden rotate-y-180"
+                  className="absolute inset-0 w-full h-full rounded-2xl bg-[#090918] border border-white/10 p-6 flex flex-col justify-start items-stretch backface-hidden rotate-y-180"
                   style={{ 
                     backfaceVisibility: 'hidden',
                     transform: 'rotateY(180deg)',
@@ -139,14 +130,6 @@ export const Certifications: React.FC = () => {
                       ))}
                     </div>
                   </div>
-
-                  <button 
-                    onClick={() => alert(`Redirecting to verify credential ${cert.id}...`)}
-                    className="w-full flex items-center justify-center gap-2 py-2 rounded-xl bg-gradient-to-r from-primary to-secondary hover:brightness-110 text-white font-sans text-xs font-semibold shadow-md transition-all duration-300"
-                  >
-                    Verify Credential
-                    <ExternalLink className="w-3.5 h-3.5" />
-                  </button>
                 </div>
 
               </div>
